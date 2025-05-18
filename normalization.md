@@ -1,20 +1,5 @@
 # Airbnb Database Normalization Report
 
-## Objective
-
-Ensure the Airbnb database schema is normalized up to **Third Normal Form (3NF)** by eliminating redundancy and ensuring all attributes depend only on the primary key.
-
----
-
-## What is 3NF?
-
-A relation is in **Third Normal Form (3NF)** if:
-
-1. It is in **Second Normal Form (2NF)**.
-2. It has **no transitive dependencies** (i.e., non-prime attributes are not dependent on other non-prime attributes).
-
----
-
 ## Step-by-Step Normalization
 
 ### 1. First Normal Form (1NF)
