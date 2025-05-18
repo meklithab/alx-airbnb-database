@@ -1,4 +1,5 @@
-
+# ENTITY RELATIONSHIP DIAGRAM
+![ER Diagram](./erd-diagram.jpg
 # ALX Airbnb Database Requirements
 
 This document outlines the database schema, including entities, attributes, constraints, and indexing used in the ALX Airbnb Clone project.
