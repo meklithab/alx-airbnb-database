@@ -22,7 +22,6 @@ A relation is in **Third Normal Form (3NF)** if:
 - All tables have atomic (indivisible) values.
 - There are no repeating groups or arrays.
 
-✅ **Status**: All tables satisfy 1NF.
 
 ---
 
@@ -31,9 +30,7 @@ A relation is in **Third Normal Form (3NF)** if:
 - All tables are in 1NF.
 - All **non-key attributes** are **fully functionally dependent** on the **entire primary key** (no partial dependencies).
 
-✅ **Status**: All tables satisfy 2NF because:
-- All primary keys are single-attribute UUIDs.
-- Non-key attributes depend fully on the primary key.
+
 
 ---
 
@@ -73,24 +70,3 @@ A relation is in **Third Normal Form (3NF)** if:
 - No transitive dependencies.
 
 ---
-
-## Summary of Adjustments
-
-No changes were needed in the current design. The schema already satisfies **3NF** by design:
-
-- Atomic and non-redundant fields
-- Proper use of foreign keys
-- No derived or transitively dependent attributes stored
-
----
-
-## Recommendation
-
-If further performance tuning is needed, consider:
-
-- Creating materialized views or computed fields **outside** the core schema
-- Adding additional indexes based on query patterns (not related to normalization)
-
----
-
-**© 2025 ALX - All rights reserved**
