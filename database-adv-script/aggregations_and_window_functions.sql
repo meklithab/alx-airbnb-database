@@ -7,7 +7,7 @@ FROM
 GROUP BY 
     user_id;
 
--- 2. Rank properties based on the total number of bookings using a window function
+-- 2. Use ROW_NUMBER() to rank properties based on total bookings
 WITH property_bookings AS (
     SELECT 
         property_id,
@@ -20,6 +20,6 @@ WITH property_bookings AS (
 SELECT 
     property_id,
     total_bookings,
-    RANK() OVER (ORDER BY total_bookings DESC) AS booking_rank
+    ROW_NUMBER() OVER (ORDER BY total_bookings DESC) AS booking_rank
 FROM 
     property_bookings;
