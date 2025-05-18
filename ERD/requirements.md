@@ -108,5 +108,3 @@ This document outlines the database schema, including entities, attributes, cons
   - `Payment.booking_id`
 
 ---
-
-**© 2025 ALX - All rights reserved**
