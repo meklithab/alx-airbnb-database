@@ -17,7 +17,7 @@ VALUES
   ('book-1', 'prop-1', 'uuid-1', '2025-06-01', '2025-06-05', 480.00, 'confirmed'),
   ('book-2', 'prop-2', 'uuid-3', '2025-07-10', '2025-07-12', 400.00, 'pending');
 
--- Payments
+-- Payments (payment_date defaults to CURRENT_TIMESTAMP)
 INSERT INTO Payment (payment_id, booking_id, amount, payment_method)
 VALUES
   ('pay-1', 'book-1', 480.00, 'credit_card'),
